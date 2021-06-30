@@ -568,9 +568,24 @@ section {
   background-color: rgb(53, 89, 160);
 }
 
+#disc {
+  font-size: 12px;
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+#third {
+  margin: 15px auto;
+  display: block;
+  width: 300px;
+  border: 8px solid rgb(32,73,158);
+}
+
+#sum {
+  font-size: 18px;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 500;
