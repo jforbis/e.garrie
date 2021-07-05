@@ -25,7 +25,7 @@
   <link href="{{ url_for('static',filename='vendor/aos/aos.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ url_for('static',filename='../static/css/style.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -33,9 +33,13 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <a class="btn btn-dark" type="button" style="font-size: 30px; border-color: white; margin-bottom: 25px;" href="#about">ELLIE GARRIE</a>
+    <a class="btn btn-dark" type="button" style="font-size: 30px; border-color: white; border-radius: 5px; margin-bottom: 25px;" href="#about">ELLIE GARRIE</a>
+    <a class="btn btn-dark" type="button" style="font-size: 30px; border-color: white; border-radius: 5px; margin-bottom: 25px;" href="#about">SS / OF / Utility</a>
+    <a class="btn btn-dark" type="button" style="font-size: 30px; border-color: white; border-radius: 5px; margin-bottom: 25px;" href="#about">Class of 2022</a>
 
-    <div class="container-fluid">
+    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
+
+    <div class="container-fluid" style="position: bottom; margin-top: 150px;">
       <div class="row">
         <div class="col">
           <a class="btn btn-dark" type="button" href="#gehs" style="display: flex; justify-content: center; border-color: white; background-color: rgb(32,73,158)">Gardner Edgerton High School Varsity - #11</a>
@@ -46,8 +50,6 @@
       </div>
     </div>
 
-    <!-- <h2>POSITIONS:  Right Field / Utility</h2> -->
-    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
   </section><!-- End Hero -->
 
   <!-- ======= Header ======= -->
@@ -56,6 +58,7 @@
 
       <div class="logo">
         <h1><a href="/">Ellie Garrie</a></h1>
+
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -103,7 +106,7 @@
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
           <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
             <div class="content d-flex flex-column justify-content-center">
-              <!-- <p>I am: <span class="typed" data-typed-items="Hardworking., Outgoing., Fun!"></span></p> -->
+              <!-- <p>I am <span class="typed" data-typed-items="Hardworking., Outgoing., Fun!"></span></p> -->
               <p>
                 My name is Ellie Garrie and I am in the class of 2022 at Gardner Edgerton High School in Gardner, Kansas. I am wanting to be a collegiate student athlete because I want to be able to continue playing the sport I love while getting an education that can prepare me for the real world. I am hardworking, outgoing, and love to have fun!
               </p>
@@ -301,41 +304,79 @@
 
         <div class="section-title">
           <h2>Statistics</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>I currently play softball for two teams:</p>
+          <p>Check out my statistics from both teams below!</p>
         </div>
 
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+
+        <div class="row d-flex justify-content-center" style="padding-bottom: 20px;">
+          <div class="col-md-2 d-md-flex justify-content-center">
+            <img src="{{ url_for('static',filename='img/egarrie/peppers-logo.jpg') }}" class="team-img">
+          </div>
+
+          <div class="col-md-4 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              KC Peppers - Varriano #16<br>
+              <u>Positions:</u>
+              <ul>
+                <li>Short Stop</li>
+                <li>Infield</li>
+                <li>Pitcher</li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-2 d-md-flex align-items-md-stretch">
+            <img src="{{ url_for('static',filename='img/egarrie/gehs-logo.png') }}" class="team-img">
+          </div>
+
+          <div class="col-md-4 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              Gardner Edgerton High School (GEHS)<br>
+              <u>Positions:</u>
+              <ul>
+                <li>Right Field</li>
+                <li>Utility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-lg-3">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="bx bxs-baseball"></i></div>
+              <h4 class="title"><a href="">Batting Average</a></h4>
+              <p class="description">PEPPERS - <span data-purecounter-decimals="3" data-purecounter-start="0" data-purecounter-end=".356" data-purecounter-duration=".5" class="purecounter"></span></p>
+              <p class="description">GEHS - <span data-purecounter-decimals="3" data-purecounter-start="0" data-purecounter-end=".338" data-purecounter-duration=".5" class="purecounter"></span></p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-3">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bx bx-run"></i></div>
+              <h4 class="title"><a href="">On Base Percentage</a></h4>
+              <p class="description">PEPPERS - <span data-purecounter-decimals="3" data-purecounter-start="0" data-purecounter-end=".427" data-purecounter-duration=".5" class="purecounter"></span></p>
+              <p class="description">GEHS - <span data-purecounter-decimals="3" data-purecounter-start="0" data-purecounter-end=".411" data-purecounter-duration=".5" class="purecounter"></span></p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-3">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-dialpad-alt"></i></div>
+              <h4 class="title"><a href="">On Base + Slugging</a></h4>
+              <p class="description">PEPPERS - <span data-purecounter-decimals="3" data-purecounter-start="0" data-purecounter-end=".865" data-purecounter-duration=".5" class="purecounter"></span></p>
+              <p class="description">GEHS - <span data-purecounter-decimals="3" data-purecounter-start="0" data-purecounter-end=".857" data-purecounter-duration=".5" class="purecounter"></span></p>
+            </div>
+          </div>
+
+          <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -351,7 +392,82 @@
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div class="row">
+        <div class="container">
+
+          <div class="row">
+  
+  
+        <div class="col-lg-12">
+          <div class="portfolio-details-slider swiper-container mySwiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/67sq-saMWUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+              
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/JPFUopyYj4k" title="Go Ahead Run - 6A KSHSAA 3rd Place Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+              
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/uLcMMqH5Tr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/b_5W1BEVRq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/-2iwGiBZpU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/xw7jAW5It-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/cGy3sC0vnq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/e2rxFITt7jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/YKZvv8D_syc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/Zr97G5v2QIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/jU7ylYVYGV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/E1M-QVkl6GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+              
+              <div class="swiper-slide">
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/9ALv1EOc33c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+
+              <!-- To Be Used For More Media -->
+              <!-- <div class="swiper-slide">
+                <center></center>
+              </div> -->
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <!-- <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -490,10 +606,10 @@
             </div>
           </div>
 
-        </div>
+        </div> -->
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section  End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="news" class="testimonials section-bg">
@@ -684,6 +800,15 @@
   <!-- JavaScript.d3 Link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 
+    <!-- Swiper Initialization -->
+    <script>
+      let swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
 </body>
 

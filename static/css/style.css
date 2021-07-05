@@ -722,6 +722,13 @@ section {
   color: rgb(32,73,158);
 }
 
+.team-img {
+  max-height: 130px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
   .services .icon-box::before {
     bottom: 60%;
