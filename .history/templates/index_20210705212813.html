@@ -70,7 +70,7 @@
           <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
           <li><a class="nav-link scrollto" href="#stats">Stats</a></li>
           <li><a class="nav-link scrollto" href="#media">Media Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#testimonials">News Articles</a></li>
+          <li><a class="nav-link scrollto" href="#news">News Articles</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -103,7 +103,7 @@
       <div class="container">
 
         <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start img-fluid rounded-circle"></div>
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
           <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
             <div class="content d-flex flex-column justify-content-center">
               <!-- <p>I am <span class="typed" data-typed-items="Hardworking., Outgoing., Fun!"></span></p> -->
@@ -225,11 +225,11 @@
           <h2>Resume</h2>
           <div class="container">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-4">
                 <!-- data-aos="fade-right"> -->
                 <img src="{{ url_for('static',filename='img/egarrie/kshsaa3pl.jpg') }}" class="img-fluid rounded-circle" id="third" alt="">
               </div>
-              <div class="col-lg-4 my-auto" id="sum">
+              <div class="col-4 my-auto" id="sum">
                   <!-- data-aos="fade-left"> -->
                 I play varsity softball for Gardner Edgerton HS and also play for the KC Peppers – Varriano travel team.  I am a former track athlete who competed in 100M Dash, 100M hurdles, 200M Relay, 100M Relay, and also the medley relay. I played basketball my freshman year.
               </div>
@@ -261,7 +261,7 @@
               <h4>Clubs &amp; Volunteer</h4>
               <h5>2010 - 2014</h5>
               <p><em>List clubs associated with here</em></p>
-              <p><em>Line out volunteer work here.</em></p>
+              <p>line out volunteer work here.</p>
             </div>
           </div>
           <div class="col-lg-6">
@@ -272,11 +272,10 @@
               <p id="gehs"><em>Gardner, KS </em></p>
               <p>
               <ul>
-                <li>KSHSAA 6A State Girls Softball - 3rd Place</li>
-                <li>KSHSAA 6A Regional 6A Girls Softball Champions</li>
-                <li>Lead the Varsity team in KSHSAA State Tournament with 4 hits, .400 average, .900 OPS, and 3 RBIs.  </li>
-                <li>Hit in the go-ahead run in 6A KSHSAA Girls Softball Quarterfinal game.<a target="new" href="https://www.youtube.com/watch?v=67sq-saMWUA">Check it out here!</a></li>
-                <li>Hit in the go-ahead run in 6A KSHSAA Girls Softball 3rd place game.<a target="new" href="https://www.youtube.com/watch?v=JPFUopyYj4k">Check it out here!</a></li>
+                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
               </ul>
               </p>
             </div>
@@ -286,10 +285,10 @@
               <p id="peppers"><em>Traveling team</em></p>
               <p>
               <ul>
-                <li>Accomplishment / Awared #1</li>
-                <li>Accomplishment / Awared #2</li>
-                <li>Accomplishment / Awared #3</li>
-                <li>Accomplishment / Awared #4</li>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
               </ul>
               </p>
             </div>
@@ -622,62 +621,77 @@
         </div>
 
         <div class="testimonials-slider swiper-container mySwiper">
-          <div class="swiper-wrapper align-items-center">
+          <div class="swiper-wrapper">
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                  <div class="row align-items-center" id="test-slide"> 
-                    <div class="col">
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      ...Offensively, the Blazers were led by Pruetting, who went 2-4 from the plate with 5 RBIs. Karr went 2-for-2 batting with a home run and 4 RBIs, while getting on base in 3 out of 3 plate appearances. Newman was 3-for-3 officially from the plate with an RBI, while Trout was 2-for-2 with an RBI and was 4-for-4 in plate appearances. Michael contributed a 2-for-3 performance at the plate with a double and an RBI, Garrie was 2-for-4 with a double and an RBI, and Crouch was 1-for-1 from the plate.
-To get to the Championship game, 10th-seeded Blue Valley West upset 7th-seeded Shawnee Mission Northwest 3-1. The title match was set with the 1st-seeded Trailblazers taking on the Jaguars...<i><a target="new" href="https://gardnernews.com/2021/06/04/trailblazers-softball-punches-ticket-to-state-with-regional-championship/"> Read More</a></i>
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </div>
+                <p>
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="{{ url_for('static',filename='img/egarrie/team.jpg') }}"  class="testimonial-img" alt="">
                   </div>
+                  
+                  <div class="col-md-8">
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    The Gardner-Edgerton High School softball team combined clutch pitching with timely hitting last Tuesday night, on their way to a pair of wins and a KSHSAA 6A Regional Championship at Gardner-Edgerton District Activities Center. The victories — 14-0 against Blue Valley North and 8-3 over Blue Valley West — earned the Trailblazers a berth in the Kansas 6A State Championship Playoff this week.<i><a target="new" href="https://gardnernews.com/2021/06/04/trailblazers-softball-punches-ticket-to-state-with-regional-championship/">Read More</a></i>
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </div>
+                </div>
+                </p>
                 <h3>The Gardner News</h3>
-                <!-- <h4>Ceo &amp; Founder</h4> -->
+                <h4>Ceo &amp; Founder</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <div class="row align-items-center" id="test-slide"> 
-                  <div class="col">
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    ...The Blazer power bats began their display in the bottom of the third inning. After Trout drew a 4-pitch walk to begin the frame, Pruetting blasted a 2-1 pitch deep over the left centerfield fence to give the Trailblazers a 4-1 lead. On the very next pitch, Garrie launched her shot over the left field wall, and the Blazer advantage had stretched to 5-1 after three complete innings...<a target="new" href="https://gardnernews.com/2021/04/15/power-barrage-leads-blazer-softball-to-victory-over-olathe-north/"> Read More</a>
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </div>
-                </div>
-                <h3>The Gardner News</h3>
-                <h4>Pete Logan</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <div class="row align-items-center" id="test-slide"> 
-                  <div class="col">
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    ...At ball four of junior outfielder Ellie Garrie’s base on balls at bat, a passed ball by the West catcher allowed junior courtesy runner Kaylah Newman to score, and the Trailblazer lead grew to 4-0. Blazer junior first baseman Kiersten Markos then followed that with a single, during which a Lady Vikings’ error allowed her to take second base and for Garrie to take third. Two batters later, a wild pitch by West’s pitcher brought home Garrie and the Blazers took a 5-0 lead into the second inning...<a target="new" href="https://gardnernews.com/2021/04/08/gehs-softball-downs-smw-to-start-2-0/"> Read More</a>                    
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </div>
-                </div>
-                <h3>The Gardner News</h3>
-                <h4>Pete Logan</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <div class="row align-items-center" id="test-slide"> 
-                  <div class="col">
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    ...We went into the bottom of the 6th, up 4-2, but wanted more insurance!  These ladies rallied their bats, scoring 4 runs:  starting with a Logan Ringel double (2-3), and continuing with a triple from Kenna Trout (2-4 with 4 RBI’s), single from Harley Pruetting (2-4), walk by Ellie Garrie (2-3) and a double by Ashely Tribble (2-4)...<a target="new" href="https://trailblazerathletics.org/2021/05/19/blazer-softball-is-state-bound/"> Read More</a>                   
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </div>
-                </div>
-                <h3>Scott Peavey</h3>
-                <h4>GEHS Trailblazer Athletics</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -696,7 +710,7 @@ To get to the Championship game, 10th-seeded Blue Valley West upset 7th-seeded S
 
         <div class="section-title">
           <h2>Contact</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
@@ -704,7 +718,7 @@ To get to the Championship game, 10th-seeded Blue Valley West upset 7th-seeded S
           <div class="col-lg-4 col-md-4">
             <div class="contact-about">
               <h3>Ellie Garrie</h3>
-              <p>I am an all-around player with tremendous work-ethic and would make a solid addition to your team. Please contact me at any of the platforms listed here!</p>
+              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
               <div class="social-links">
                 <a href="https://twitter.com/elliegarrie_?lang=en" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -768,7 +782,7 @@ To get to the Championship game, 10th-seeded Blue Valley West upset 7th-seeded S
   <footer id="footer">
     <div class="container">
       <div class="credits">
-        Designed by <a target="new" href="https://j-forbis-portfolio.herokuapp.com/">J. Forbis</a> with help from <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a target="new" href="https://www.linkedin.com/in/john-forbis-cprp-96921513/">J. Forbis</a> with help from <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Lonely</span></strong>. All Rights Reserved

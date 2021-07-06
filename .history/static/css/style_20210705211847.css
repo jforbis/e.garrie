@@ -515,9 +515,6 @@ section {
   background-size: cover;
   min-height: 300px;
   max-width: 300px;
-  margin: 15px auto;
-  display: block;
-  border: 8px solid rgb(32,73,158);
 }
 
 @media (max-width: 991px) {
@@ -937,13 +934,12 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 200px;
+  width: 120px;
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  border: 6px solid rgb(32,73,158);
+  border: 4px solid rgb(32,73,158);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  margin: auto;
 }
 
 .testimonials .testimonial-item h3 {
@@ -979,25 +975,13 @@ section {
 
 .testimonials .testimonial-item p {
   font-style: italic;
-  margin: 0 25px 0 25px;
+  margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
   background: #fff;
   position: relative;
   border-radius: 6px;
   position: relative;
-  z-index: 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#test-slide {
-  font-style: italic;
-  margin: 0 25px 0 25px;
-  padding: 20px 20px 60px 20px;
-  background: #fff;
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 0;
+  z-index: 1;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 

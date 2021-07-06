@@ -515,9 +515,6 @@ section {
   background-size: cover;
   min-height: 300px;
   max-width: 300px;
-  margin: 15px auto;
-  display: block;
-  border: 8px solid rgb(32,73,158);
 }
 
 @media (max-width: 991px) {
